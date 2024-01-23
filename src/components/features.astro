@@ -1,0 +1,62 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+{
+  title: "Sales Expertise",
+  description: "Sell specialized pest control solutions with a focus on customer needs and eco-friendly practices.",
+  icon: "bx:bxs-briefcase",
+},
+{
+  title: "Product Knowledge",
+  description: "Expert understanding of a wide range of pest control services for homes and businesses.",
+  icon: "bx:bxs-book",
+},
+{
+  title: "Client Relations",
+  description: "Build and maintain strong relationships with a diverse client base for sustained business growth.",
+  icon: "bx:bxs-smile",
+},
+{
+  title: "Solution Selling",
+  description: "Emphasize the effectiveness and environmental benefits of EcoShield's pest control services.",
+  icon: "bx:bxs-bulb",
+},
+{
+  title: "Community Impact",
+  description: "Promote community initiatives like Exterminate Hunger in sales discussions to showcase company values.",
+  icon: "bx:bxs-heart",
+},
+{
+  title: "Performance Driven",
+  description: "Target-driven sales approach with a focus on achieving and exceeding sales goals.",
+  icon: "bx:bxs-trophy",
+},
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    We Give Everthing You Need to Succed
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Eco Shield will provide you with everything you need to succeed. Clients and Sales Skills.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>

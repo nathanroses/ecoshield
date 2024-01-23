@@ -1,0 +1,39 @@
+---
+import { Image } from "@astrojs/image/components";
+import heroImage from "assets/hero.png";
+import Link from "@components/ui/link.astro";
+---
+
+<main class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-8">
+  <div class="py-6 md:order-1 hidden md:block">
+    <Image
+      src={heroImage}
+      alt="Astronaut in the air"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  <div>
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight">
+      Join the Eco Shield Team & Start Today
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Join the EcoShield team for a rewarding career in pest control. We offer positions across various states, from Pest Technicians to Sales Professionals. With our commitment to excellence and employee development, EcoShield is the perfect place to grow your career in pest control services.
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="#"
+        href="https://web3templates.com/"
+        target="_blank"
+        rel="noopener">Book a Call</Link
+      >
+      <Link
+        size="lg"
+        style="outline"
+        rel="noopener"
+        href="https://github.com/surjithctly/astroship"
+        target="_blank">Learn More</Link
+      >
+    </div>
+  </div>
+</main>
