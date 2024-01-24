@@ -2,7 +2,7 @@
 title: "Door Knocking to Start in April for Eco Shield"
 excerpt: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
 publishDate: "2022-11-08T11:39:36.050Z"
-image: "https://source.unsplash.com/eYpcLDXHVb0"
+image: "/truck.jpg"  
 category: "Update"
 author: "Janette Lynch"
 layout: "@layouts/BlogLayout.astro"
